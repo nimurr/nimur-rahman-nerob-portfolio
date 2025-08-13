@@ -40,7 +40,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <span className="text-3xl font-black bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent">
-              Portfolio
+              Nimur Rahman
             </span>
           </div>
 
