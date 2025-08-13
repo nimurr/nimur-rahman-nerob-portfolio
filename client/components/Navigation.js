@@ -48,14 +48,15 @@ const Navigation = () => {
         { className: "flex justify-between items-center h-20" },
         React.createElement(
           "div",
-          { className: "flex-shrink-0" },
+          { className: "flex-shrink-0 relative" },
           React.createElement(
             "span",
             {
               className:
-                "text-3xl font-black bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent",
+                "text-3xl font-black  bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent",
             },
             "NEROB",
+            React.createElement("span", { className: "text-pink-500 absolute top-0" }, "."),
           ),
         ),
         React.createElement(
