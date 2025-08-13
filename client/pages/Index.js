@@ -519,7 +519,7 @@ export default function Index() {
                     React.createElement(
                       "div",
                       { className: "text-white font-bold text-xl" },
-                      "Creative Mind",
+                      "NEROB",
                     ),
                   ),
                 ),
