@@ -12,17 +12,32 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => React.createElement(QueryClientProvider, { client: queryClient },
-  React.createElement(TooltipProvider, null,
-    React.createElement(Toaster),
-    React.createElement(Sonner),
-    React.createElement(BrowserRouter, null,
-      React.createElement(Routes, null,
-        React.createElement(Route, { path: "/", element: React.createElement(Index) }),
-        React.createElement(Route, { path: "*", element: React.createElement(NotFound) })
-      )
-    )
-  )
-);
+const App = () =>
+  React.createElement(
+    QueryClientProvider,
+    { client: queryClient },
+    React.createElement(
+      TooltipProvider,
+      null,
+      React.createElement(Toaster),
+      React.createElement(Sonner),
+      React.createElement(
+        BrowserRouter,
+        null,
+        React.createElement(
+          Routes,
+          null,
+          React.createElement(Route, {
+            path: "/",
+            element: React.createElement(Index),
+          }),
+          React.createElement(Route, {
+            path: "*",
+            element: React.createElement(NotFound),
+          }),
+        ),
+      ),
+    ),
+  );
 
 createRoot(document.getElementById("root")).render(React.createElement(App));
