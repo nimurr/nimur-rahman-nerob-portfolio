@@ -3,12 +3,12 @@ import { ArrowDown, Github, Linkedin, Mail, ExternalLink, Calendar, MapPin, Code
 
 export default function Index() {
   const skills = [
-    { name: 'React', level: 90, icon: <Code className="w-6 h-6" />, color: 'from-cyan-400 to-blue-500' },
-    { name: 'TypeScript', level: 85, icon: <Code className="w-6 h-6" />, color: 'from-blue-500 to-purple-500' },
-    { name: 'Tailwind CSS', level: 95, icon: <Palette className="w-6 h-6" />, color: 'from-pink-500 to-rose-500' },
-    { name: 'Node.js', level: 80, icon: <Database className="w-6 h-6" />, color: 'from-green-400 to-emerald-500' },
-    { name: 'Next.js', level: 85, icon: <Globe className="w-6 h-6" />, color: 'from-orange-400 to-red-500' },
-    { name: 'Python', level: 75, icon: <Code className="w-6 h-6" />, color: 'from-yellow-400 to-orange-500' },
+    { name: 'React.js', level: 95, icon: <Code className="w-6 h-6" />, color: 'from-cyan-400 to-blue-500' },
+    { name: 'JavaScript', level: 90, icon: <Code className="w-6 h-6" />, color: 'from-yellow-400 to-orange-500' },
+    { name: 'HTML & CSS', level: 95, icon: <Palette className="w-6 h-6" />, color: 'from-pink-500 to-rose-500' },
+    { name: 'Node.js', level: 85, icon: <Database className="w-6 h-6" />, color: 'from-green-400 to-emerald-500' },
+    { name: 'MongoDB', level: 80, icon: <Database className="w-6 h-6" />, color: 'from-emerald-500 to-teal-500' },
+    { name: 'Express.js', level: 85, icon: <Globe className="w-6 h-6" />, color: 'from-blue-500 to-purple-500' },
   ];
 
   const experiences = [
