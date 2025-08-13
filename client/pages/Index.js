@@ -283,7 +283,7 @@ export default function Index() {
             { className: "flex justify-center space-x-8 pt-8" },
             React.createElement(
               "a",
-              { href: "#", className: "group relative" },
+              { href: "https://github.com/nimurr", className: "group relative" },
               React.createElement("div", {
                 className:
                   "absolute inset-0 bg-gradient-to-r from-pink-500 to-violet-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity",
@@ -302,7 +302,7 @@ export default function Index() {
             ),
             React.createElement(
               "a",
-              { href: "#", className: "group relative" },
+              { href: "https://www.linkedin.com/in/nimur", className: "group relative" },
               React.createElement("div", {
                 className:
                   "absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity",
@@ -321,7 +321,7 @@ export default function Index() {
             ),
             React.createElement(
               "a",
-              { href: "#", className: "group relative" },
+              { href: "https://mail.google.com/mail/u/0/?fs=1&to=nimurnerob404@gmail.com&tf=cm", className: "group relative" },
               React.createElement("div", {
                 className:
                   "absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity",
