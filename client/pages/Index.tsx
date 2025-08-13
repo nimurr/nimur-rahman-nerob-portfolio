@@ -1,14 +1,14 @@
 import Navigation from '../components/Navigation';
-import { ArrowDown, Github, Linkedin, Mail, ExternalLink, Calendar, MapPin, Code, Palette, Database, Globe, User, Award, BookOpen, Send } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, ExternalLink, Calendar, MapPin, Code, Palette, Database, Globe, User, Award, BookOpen, Send, Star, Zap, Heart, Sparkles, Camera, Play, Music } from 'lucide-react';
 
 export default function Index() {
   const skills = [
-    { name: 'React', level: 90, icon: <Code className="w-6 h-6" /> },
-    { name: 'TypeScript', level: 85, icon: <Code className="w-6 h-6" /> },
-    { name: 'Tailwind CSS', level: 95, icon: <Palette className="w-6 h-6" /> },
-    { name: 'Node.js', level: 80, icon: <Database className="w-6 h-6" /> },
-    { name: 'Next.js', level: 85, icon: <Globe className="w-6 h-6" /> },
-    { name: 'Python', level: 75, icon: <Code className="w-6 h-6" /> },
+    { name: 'React', level: 90, icon: <Code className="w-6 h-6" />, color: 'from-cyan-400 to-blue-500' },
+    { name: 'TypeScript', level: 85, icon: <Code className="w-6 h-6" />, color: 'from-blue-500 to-purple-500' },
+    { name: 'Tailwind CSS', level: 95, icon: <Palette className="w-6 h-6" />, color: 'from-pink-500 to-rose-500' },
+    { name: 'Node.js', level: 80, icon: <Database className="w-6 h-6" />, color: 'from-green-400 to-emerald-500' },
+    { name: 'Next.js', level: 85, icon: <Globe className="w-6 h-6" />, color: 'from-orange-400 to-red-500' },
+    { name: 'Python', level: 75, icon: <Code className="w-6 h-6" />, color: 'from-yellow-400 to-orange-500' },
   ];
 
   const experiences = [
@@ -18,6 +18,7 @@ export default function Index() {
       period: '2022 - Present',
       location: 'San Francisco, CA',
       description: 'Leading frontend development for modern web applications using React, TypeScript, and advanced CSS frameworks.',
+      color: 'from-pink-500 to-violet-500'
     },
     {
       title: 'Full Stack Developer',
@@ -25,6 +26,7 @@ export default function Index() {
       period: '2020 - 2022',
       location: 'New York, NY',
       description: 'Developed and maintained full-stack applications, implemented responsive designs, and optimized application performance.',
+      color: 'from-cyan-500 to-blue-500'
     },
     {
       title: 'Frontend Developer',
@@ -32,31 +34,32 @@ export default function Index() {
       period: '2018 - 2020',
       location: 'Los Angeles, CA',
       description: 'Created stunning user interfaces and interactive web experiences for various clients across different industries.',
+      color: 'from-emerald-500 to-teal-500'
     },
   ];
 
   const projects = [
     {
-      title: 'E-commerce Platform',
-      description: 'A modern e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      title: 'AI-Powered E-commerce',
+      description: 'A revolutionary e-commerce platform with AI recommendations, AR try-on features, and seamless payment integration.',
+      gradient: 'from-purple-600 via-pink-600 to-blue-600',
+      technologies: ['React', 'AI/ML', 'WebAR', 'Stripe'],
       liveUrl: '#',
       githubUrl: '#',
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: '/placeholder.svg',
-      technologies: ['Vue.js', 'Firebase', 'Tailwind CSS'],
+      title: 'Real-time Collaboration Suite',
+      description: 'A comprehensive workspace with real-time collaboration, video calls, whiteboarding, and project management.',
+      gradient: 'from-cyan-500 via-blue-500 to-indigo-600',
+      technologies: ['Vue.js', 'WebRTC', 'Socket.io', 'Canvas API'],
       liveUrl: '#',
       githubUrl: '#',
     },
     {
-      title: 'Portfolio Website',
-      description: 'A responsive portfolio website showcasing modern design principles and smooth animations built with React and Framer Motion.',
-      image: '/placeholder.svg',
-      technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
+      title: 'Creative Portfolio Studio',
+      description: 'An immersive 3D portfolio platform for artists and designers with WebGL animations and interactive galleries.',
+      gradient: 'from-pink-500 via-red-500 to-orange-500',
+      technologies: ['Three.js', 'React', 'WebGL', 'GSAP'],
       liveUrl: '#',
       githubUrl: '#',
     },
@@ -64,192 +67,224 @@ export default function Index() {
 
   const blogPosts = [
     {
-      title: 'Building Modern React Applications',
-      excerpt: 'Learn the best practices for building scalable and maintainable React applications in 2024.',
+      title: 'The Future of Web Animations',
+      excerpt: 'Exploring cutting-edge animation techniques with CSS, JavaScript, and WebGL for immersive user experiences.',
       date: 'Dec 15, 2023',
-      readTime: '5 min read',
-      category: 'React',
+      readTime: '8 min read',
+      category: 'Animation',
+      gradient: 'from-purple-500 to-pink-500'
     },
     {
-      title: 'Mastering Tailwind CSS',
-      excerpt: 'Advanced techniques and tips for creating beautiful user interfaces with Tailwind CSS.',
+      title: 'Building with AI Integration',
+      excerpt: 'How to integrate AI APIs and machine learning models into modern web applications for enhanced user experiences.',
       date: 'Dec 10, 2023',
-      readTime: '7 min read',
-      category: 'CSS',
+      readTime: '12 min read',
+      category: 'AI/ML',
+      gradient: 'from-cyan-500 to-blue-500'
     },
     {
-      title: 'The Future of Web Development',
-      excerpt: 'Exploring emerging trends and technologies that will shape the future of web development.',
+      title: 'Designing for Accessibility',
+      excerpt: 'Creating inclusive digital experiences that work for everyone, with practical tips and real-world examples.',
       date: 'Dec 5, 2023',
-      readTime: '6 min read',
-      category: 'Technology',
+      readTime: '10 min read',
+      category: 'UX/UI',
+      gradient: 'from-green-500 to-emerald-500'
     },
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black overflow-x-hidden">
       <Navigation />
       
-      {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-7xl font-extralight tracking-tight text-gray-900">
-              Creative <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-normal">Developer</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Crafting beautiful, functional, and user-centered digital experiences with modern technologies
+      {/* Hero Section - Ultra Modern */}
+      <section id="hero" className="min-h-screen flex items-center justify-center relative">
+        {/* Animated Background */}
+        <div className="absolute inset-0 gradient-bg-animated opacity-30"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 animate-float">
+          <div className="w-20 h-20 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 opacity-60 blur-xl"></div>
+        </div>
+        <div className="absolute top-40 right-20 animate-float" style={{animationDelay: '2s'}}>
+          <div className="w-32 h-32 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 opacity-40 blur-2xl"></div>
+        </div>
+        <div className="absolute bottom-40 left-1/4 animate-float" style={{animationDelay: '4s'}}>
+          <div className="w-24 h-24 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 opacity-50 blur-xl"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-8">
+            <div className="relative">
+              <h1 className="text-6xl md:text-9xl font-black tracking-tight text-white mb-4">
+                CREATIVE
+              </h1>
+              <h1 className="text-6xl md:text-9xl font-black tracking-tight gradient-text animate-rainbow">
+                DEVELOPER
+              </h1>
+              <div className="absolute -inset-4 bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-cyan-500/20 blur-3xl animate-pulse"></div>
+            </div>
+            
+            <p className="text-xl md:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
+              Crafting <span className="text-neon font-bold">next-generation</span> digital experiences with 
+              <span className="bg-gradient-to-r from-pink-400 to-violet-400 bg-clip-text text-transparent font-bold"> cutting-edge</span> technology
             </p>
-            <div className="flex justify-center space-x-6 pt-8">
-              <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
-                <Github className="w-8 h-8" />
+            
+            {/* Social Links with Glow */}
+            <div className="flex justify-center space-x-8 pt-8">
+              <a href="#" className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-violet-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative bg-black p-4 rounded-full border border-pink-500/50 group-hover:border-pink-500 transition-colors">
+                  <Github className="w-8 h-8 text-white group-hover:text-pink-400 transition-colors" />
+                </div>
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
-                <Linkedin className="w-8 h-8" />
+              <a href="#" className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative bg-black p-4 rounded-full border border-cyan-500/50 group-hover:border-cyan-500 transition-colors">
+                  <Linkedin className="w-8 h-8 text-white group-hover:text-cyan-400 transition-colors" />
+                </div>
               </a>
-              <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-200">
-                <Mail className="w-8 h-8" />
+              <a href="#" className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative bg-black p-4 rounded-full border border-green-500/50 group-hover:border-green-500 transition-colors">
+                  <Mail className="w-8 h-8 text-white group-hover:text-green-400 transition-colors" />
+                </div>
               </a>
             </div>
+            
+            {/* CTA Button */}
             <div className="pt-12">
               <button
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="inline-flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                className="group relative inline-flex items-center space-x-3 px-8 py-4 rounded-full font-bold text-lg overflow-hidden"
               >
-                <span>Discover More</span>
-                <ArrowDown className="w-5 h-5 animate-bounce" />
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 blur group-hover:blur-lg transition-all"></div>
+                <span className="relative text-white">Explore My Universe</span>
+                <ArrowDown className="relative w-6 h-6 text-white animate-bounce" />
               </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      {/* About Section - Unique Design */}
+      <section id="about" className="py-32 relative bg-gradient-to-br from-purple-900/20 via-black to-cyan-900/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-4xl font-light text-gray-900 mb-6">About Me</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                I'm a passionate frontend developer with over 5 years of experience creating digital experiences that combine beautiful design with functional code. I specialize in React, TypeScript, and modern CSS frameworks.
-              </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing my knowledge through blog posts and community talks.
-              </p>
-              <div className="flex items-center space-x-8">
-                <div className="flex items-center space-x-2">
-                  <User className="w-5 h-5 text-blue-600" />
-                  <span className="text-gray-700">5+ Years Experience</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Award className="w-5 h-5 text-blue-600" />
-                  <span className="text-gray-700">50+ Projects</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-pink-500 to-violet-500 rounded-3xl blur opacity-30 animate-pulse"></div>
+              <div className="relative glassmorphism rounded-3xl p-8 border border-pink-500/30">
+                <h2 className="text-5xl font-black text-white mb-8">
+                  About <span className="gradient-text">Me</span>
+                </h2>
+                <p className="text-xl text-gray-300 mb-6 leading-relaxed">
+                  I'm a <span className="text-neon font-bold">visionary developer</span> who transforms ideas into 
+                  stunning digital realities. With <span className="text-pink-400 font-bold">5+ years</span> of experience, 
+                  I specialize in creating immersive experiences that push the boundaries of what's possible on the web.
+                </p>
+                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                  When I'm not coding the future, you'll find me exploring <span className="text-cyan-400 font-bold">AI technologies</span>, 
+                  contributing to open source, or sharing knowledge with the developer community.
+                </p>
+                
+                {/* Stats */}
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center p-4 rounded-2xl bg-gradient-to-r from-pink-500/10 to-violet-500/10 border border-pink-500/20">
+                    <div className="flex items-center justify-center mb-2">
+                      <Zap className="w-8 h-8 text-pink-400" />
+                    </div>
+                    <div className="text-3xl font-bold text-white">100+</div>
+                    <div className="text-gray-400">Projects Launched</div>
+                  </div>
+                  <div className="text-center p-4 rounded-2xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20">
+                    <div className="flex items-center justify-center mb-2">
+                      <Star className="w-8 h-8 text-cyan-400" />
+                    </div>
+                    <div className="text-3xl font-bold text-white">50K+</div>
+                    <div className="text-gray-400">Lines of Code</div>
+                  </div>
                 </div>
               </div>
             </div>
+            
+            {/* Visual Element */}
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl"></div>
+              <div className="aspect-square relative">
+                {/* Main Circle */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 p-1 animate-spin" style={{animationDuration: '20s'}}>
+                  <div className="w-full h-full rounded-full bg-black flex items-center justify-center">
+                    <div className="text-center space-y-4">
+                      <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 flex items-center justify-center">
+                        <User className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="text-white font-bold text-xl">Creative Mind</div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Floating Icons */}
+                <div className="absolute top-10 right-10 animate-float">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-red-500 flex items-center justify-center animate-glow">
+                    <Heart className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="absolute bottom-10 left-10 animate-float" style={{animationDelay: '2s'}}>
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center animate-glow">
+                    <Sparkles className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="absolute top-1/2 left-0 animate-float" style={{animationDelay: '4s'}}>
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center animate-glow">
+                    <Code className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-50">
+      {/* Skills Section - Colorful & Interactive */}
+      <section id="skills" className="py-32 bg-gradient-to-br from-black via-purple-900/10 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-gray-900 mb-4">Skills & Technologies</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Here are the technologies and tools I work with to bring ideas to life
+          <div className="text-center mb-20">
+            <h2 className="text-6xl font-black text-white mb-6">
+              My <span className="gradient-text">Superpowers</span>
+            </h2>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+              Technologies I wield to create <span className="text-neon font-bold">extraordinary</span> digital experiences
             </p>
           </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skill, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="text-blue-600">{skill.icon}</div>
-                  <h3 className="text-lg font-medium text-gray-900">{skill.name}</h3>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">{skill.level}% Proficiency</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Experience Section */}
-      <section id="experience" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-gray-900 mb-4">Experience</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              My professional journey and key accomplishments
-            </p>
-          </div>
-          <div className="space-y-8">
-            {experiences.map((experience, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-900">{experience.title}</h3>
-                    <p className="text-lg text-blue-600 font-medium">{experience.company}</p>
-                  </div>
-                  <div className="flex flex-col md:items-end space-y-1 mt-2 md:mt-0">
-                    <div className="flex items-center space-x-2 text-gray-600">
-                      <Calendar className="w-4 h-4" />
-                      <span>{experience.period}</span>
+              <div key={index} className="group relative">
+                <div className={`absolute inset-0 bg-gradient-to-r ${skill.color} rounded-2xl blur opacity-50 group-hover:opacity-80 transition-opacity`}></div>
+                <div className="relative glassmorphism rounded-2xl p-8 border border-white/10 group-hover:border-white/30 transition-all transform group-hover:scale-105">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className={`p-3 rounded-full bg-gradient-to-r ${skill.color}`}>
+                      {skill.icon}
                     </div>
-                    <div className="flex items-center space-x-2 text-gray-600">
-                      <MapPin className="w-4 h-4" />
-                      <span>{experience.location}</span>
-                    </div>
+                    <h3 className="text-2xl font-bold text-white">{skill.name}</h3>
                   </div>
-                </div>
-                <p className="text-gray-700 leading-relaxed">{experience.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-gray-900 mb-4">Featured Projects</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              A selection of projects that showcase my skills and creativity
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100"></div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
-                        {tech}
+                  
+                  {/* Animated Progress Bar */}
+                  <div className="relative">
+                    <div className="w-full bg-gray-800 rounded-full h-3 mb-2">
+                      <div
+                        className={`bg-gradient-to-r ${skill.color} h-3 rounded-full transition-all duration-2000 ease-out relative overflow-hidden`}
+                        style={{ width: `${skill.level}%` }}
+                      >
+                        <div className="absolute inset-0 bg-white/30 animate-pulse"></div>
+                      </div>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-400">Proficiency</span>
+                      <span className={`font-bold bg-gradient-to-r ${skill.color} bg-clip-text text-transparent`}>
+                        {skill.level}%
                       </span>
-                    ))}
-                  </div>
-                  <div className="flex space-x-4">
-                    <a href={project.liveUrl} className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition-colors duration-200">
-                      <ExternalLink className="w-4 h-4" />
-                      <span>Live Demo</span>
-                    </a>
-                    <a href={project.githubUrl} className="flex items-center space-x-2 text-gray-600 hover:text-gray-800 transition-colors duration-200">
-                      <Github className="w-4 h-4" />
-                      <span>Code</span>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -258,33 +293,171 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section id="blog" className="py-20 bg-white">
+      {/* Experience Section - Timeline Design */}
+      <section id="experience" className="py-32 bg-gradient-to-br from-cyan-900/10 via-black to-purple-900/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light text-gray-900 mb-4">Latest Blog Posts</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Thoughts, tutorials, and insights on web development
+          <div className="text-center mb-20">
+            <h2 className="text-6xl font-black text-white mb-6">
+              My <span className="gradient-text">Journey</span>
+            </h2>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+              The evolution of a <span className="text-neon font-bold">digital creator</span>
             </p>
           </div>
+          
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-pink-500 via-purple-500 to-cyan-500"></div>
+            
+            <div className="space-y-20">
+              {experiences.map((experience, index) => (
+                <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                  {/* Timeline Dot */}
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 border-4 border-black z-10"></div>
+                  
+                  <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
+                    <div className="relative group">
+                      <div className={`absolute inset-0 bg-gradient-to-r ${experience.color} rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity`}></div>
+                      <div className="relative glassmorphism rounded-2xl p-8 border border-white/10 group-hover:border-white/30 transition-all">
+                        <h3 className="text-2xl font-bold text-white mb-2">{experience.title}</h3>
+                        <p className={`text-xl font-semibold bg-gradient-to-r ${experience.color} bg-clip-text text-transparent mb-4`}>
+                          {experience.company}
+                        </p>
+                        <div className="flex items-center space-x-4 mb-4 text-gray-400">
+                          <div className="flex items-center space-x-2">
+                            <Calendar className="w-4 h-4" />
+                            <span>{experience.period}</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="w-4 h-4" />
+                            <span>{experience.location}</span>
+                          </div>
+                        </div>
+                        <p className="text-gray-300 leading-relaxed">{experience.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section - 3D Cards */}
+      <section id="projects" className="py-32 bg-gradient-to-br from-black via-pink-900/10 to-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-6xl font-black text-white mb-6">
+              Featured <span className="gradient-text">Creations</span>
+            </h2>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+              Groundbreaking projects that showcase <span className="text-neon font-bold">innovation</span> and creativity
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {projects.map((project, index) => (
+              <div key={index} className="group relative transform transition-all duration-500 hover:scale-105">
+                <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} rounded-3xl blur opacity-50 group-hover:opacity-80 transition-opacity`}></div>
+                <div className="relative glassmorphism rounded-3xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all">
+                  {/* Project Image/Visual */}
+                  <div className={`h-48 bg-gradient-to-r ${project.gradient} relative overflow-hidden`}>
+                    <div className="absolute inset-0 bg-black/20"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-16 h-16 mx-auto rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4">
+                          <Play className="w-8 h-8 text-white" />
+                        </div>
+                        <div className="text-white font-bold">Live Preview</div>
+                      </div>
+                    </div>
+                    
+                    {/* Floating Elements */}
+                    <div className="absolute top-4 right-4 animate-float">
+                      <Camera className="w-6 h-6 text-white/80" />
+                    </div>
+                    <div className="absolute bottom-4 left-4 animate-float" style={{animationDelay: '2s'}}>
+                      <Music className="w-6 h-6 text-white/80" />
+                    </div>
+                  </div>
+                  
+                  <div className="p-8">
+                    <h3 className="text-2xl font-bold text-white mb-3">{project.title}</h3>
+                    <p className="text-gray-300 mb-6 leading-relaxed">{project.description}</p>
+                    
+                    {/* Tech Stack */}
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {project.technologies.map((tech, techIndex) => (
+                        <span key={techIndex} className={`px-3 py-1 text-sm rounded-full bg-gradient-to-r ${project.gradient} text-white font-medium`}>
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    
+                    {/* Action Buttons */}
+                    <div className="flex space-x-4">
+                      <a href={project.liveUrl} className="flex-1 group/btn relative overflow-hidden rounded-full">
+                        <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-80 group-hover/btn:opacity-100 transition-opacity`}></div>
+                        <div className="relative px-6 py-3 text-center">
+                          <div className="flex items-center justify-center space-x-2 text-white font-bold">
+                            <ExternalLink className="w-4 h-4" />
+                            <span>Live Demo</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a href={project.githubUrl} className="px-6 py-3 rounded-full border border-white/30 text-white hover:bg-white/10 transition-all flex items-center space-x-2">
+                        <Github className="w-4 h-4" />
+                        <span>Code</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section - Modern Cards */}
+      <section id="blog" className="py-32 bg-gradient-to-br from-purple-900/10 via-black to-cyan-900/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-6xl font-black text-white mb-6">
+              Latest <span className="gradient-text">Insights</span>
+            </h2>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+              Thoughts and tutorials on the <span className="text-neon font-bold">future</span> of web development
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
-              <article key={index} className="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">{post.category}</span>
-                    <div className="flex items-center space-x-2 text-gray-500 text-sm">
-                      <BookOpen className="w-4 h-4" />
-                      <span>{post.readTime}</span>
+              <article key={index} className="group relative transform transition-all duration-500 hover:scale-105">
+                <div className={`absolute inset-0 bg-gradient-to-r ${post.gradient} rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity`}></div>
+                <div className="relative glassmorphism rounded-2xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all">
+                  <div className="p-8">
+                    <div className="flex items-center justify-between mb-6">
+                      <span className={`px-4 py-2 rounded-full text-sm font-bold bg-gradient-to-r ${post.gradient} text-white`}>
+                        {post.category}
+                      </span>
+                      <div className="flex items-center space-x-2 text-gray-400 text-sm">
+                        <BookOpen className="w-4 h-4" />
+                        <span>{post.readTime}</span>
+                      </div>
                     </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{post.title}</h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">{post.excerpt}</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-gray-500 text-sm">{post.date}</span>
-                    <button className="text-blue-600 hover:text-blue-800 transition-colors duration-200 font-medium">
-                      Read More →
-                    </button>
+                    
+                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-pink-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all">
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-300 mb-6 leading-relaxed">{post.excerpt}</p>
+                    
+                    <div className="flex items-center justify-between">
+                      <span className="text-gray-500 text-sm">{post.date}</span>
+                      <button className={`px-6 py-2 rounded-full font-bold bg-gradient-to-r ${post.gradient} text-white hover:shadow-lg hover:shadow-pink-500/25 transition-all`}>
+                        Read More →
+                      </button>
+                    </div>
                   </div>
                 </div>
               </article>
@@ -293,87 +466,122 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-light mb-4">Let's Work Together</h2>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear about it and discuss how we can bring your ideas to life.
+      {/* Contact Section - Futuristic */}
+      <section id="contact" className="py-32 relative">
+        <div className="absolute inset-0 gradient-bg-animated opacity-20"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-6xl font-black text-white mb-6">
+              Let's Create <span className="gradient-text">Together</span>
+            </h2>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
+              Ready to bring your <span className="text-neon font-bold">wildest ideas</span> to life? Let's make magic happen.
             </p>
           </div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-blue-400" />
-                  <span className="text-lg">hello@portfolio.com</span>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-cyan-500 rounded-3xl blur opacity-30"></div>
+              <div className="relative glassmorphism rounded-3xl p-10 border border-white/20">
+                <h3 className="text-3xl font-bold text-white mb-8">Get In Touch</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-center space-x-4 group">
+                    <div className="p-4 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 group-hover:scale-110 transition-transform">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="text-xl text-gray-300 group-hover:text-white transition-colors">hello@portfolio.com</span>
+                  </div>
+                  <div className="flex items-center space-x-4 group">
+                    <div className="p-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 group-hover:scale-110 transition-transform">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="text-xl text-gray-300 group-hover:text-white transition-colors">San Francisco, CA</span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <MapPin className="w-6 h-6 text-blue-400" />
-                  <span className="text-lg">San Francisco, CA</span>
+                
+                {/* Social Links */}
+                <div className="flex space-x-6 mt-10">
+                  <a href="#" className="group relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-violet-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="relative bg-black p-4 rounded-full border border-pink-500/50 group-hover:border-pink-500 transition-colors transform group-hover:scale-110">
+                      <Github className="w-8 h-8 text-white group-hover:text-pink-400 transition-colors" />
+                    </div>
+                  </a>
+                  <a href="#" className="group relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="relative bg-black p-4 rounded-full border border-cyan-500/50 group-hover:border-cyan-500 transition-colors transform group-hover:scale-110">
+                      <Linkedin className="w-8 h-8 text-white group-hover:text-cyan-400 transition-colors" />
+                    </div>
+                  </a>
+                  <a href="#" className="group relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="relative bg-black p-4 rounded-full border border-green-500/50 group-hover:border-green-500 transition-colors transform group-hover:scale-110">
+                      <Mail className="w-8 h-8 text-white group-hover:text-green-400 transition-colors" />
+                    </div>
+                  </a>
                 </div>
-              </div>
-              <div className="flex space-x-6 mt-8">
-                <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
-                  <Github className="w-8 h-8" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
-                  <Linkedin className="w-8 h-8" />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors duration-200">
-                  <Mail className="w-8 h-8" />
-                </a>
               </div>
             </div>
-            <div>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="your@email.com"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                    placeholder="Tell me about your project..."
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
-                >
-                  <Send className="w-5 h-5" />
-                  <span>Send Message</span>
-                </button>
-              </form>
+            
+            {/* Contact Form */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur opacity-30"></div>
+              <div className="relative glassmorphism rounded-3xl p-10 border border-white/20">
+                <form className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-lg font-bold text-white mb-3">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      className="w-full px-6 py-4 bg-black/50 border border-white/20 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-white placeholder-gray-400 backdrop-blur-sm"
+                      placeholder="Your awesome name"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-lg font-bold text-white mb-3">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      className="w-full px-6 py-4 bg-black/50 border border-white/20 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all text-white placeholder-gray-400 backdrop-blur-sm"
+                      placeholder="your@email.com"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="message" className="block text-lg font-bold text-white mb-3">Message</label>
+                    <textarea
+                      id="message"
+                      rows={6}
+                      className="w-full px-6 py-4 bg-black/50 border border-white/20 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all text-white placeholder-gray-400 backdrop-blur-sm resize-none"
+                      placeholder="Tell me about your incredible project idea..."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full relative group overflow-hidden rounded-xl py-4 font-bold text-lg"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 blur group-hover:blur-lg transition-all"></div>
+                    <div className="relative flex items-center justify-center space-x-3 text-white">
+                      <Send className="w-6 h-6" />
+                      <span>Launch Project 🚀</span>
+                    </div>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 border-t border-gray-800 py-8">
+      <footer className="bg-black border-t border-white/10 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-gray-400">
-            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+          <div className="text-center">
+            <div className="text-4xl font-black gradient-text mb-4">Portfolio</div>
+            <p className="text-gray-400 text-lg">&copy; 2024 Creative Developer. Crafting the future, one pixel at a time.</p>
           </div>
         </div>
       </footer>
