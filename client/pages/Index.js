@@ -850,7 +850,7 @@ export default function Index() {
                 "div",
                 {
                   key: index,
-                  className: `relative flex items-center lg:${index % 2 === 0 ? "justify-start" : "justify-end"} justify-start`,
+                  className: `relative flex items-center justify-start ${index % 2 === 0 ? "lg:justify-start" : "lg:justify-end"}`,
                 },
                 // Timeline Dot - Desktop center, Mobile left
                 React.createElement("div", {
