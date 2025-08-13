@@ -116,6 +116,39 @@
     animation: float 6s ease-in-out infinite;
   }
 
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-rainbow {
+    animation: rainbow 8s linear infinite;
+  }
+
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .neon-glow {
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.5), 0 0 40px rgba(255, 0, 128, 0.3);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent;
+  }
+
+  .gradient-bg-animated {
+    background: linear-gradient(-45deg, #ff0080, #8000ff, #00ffff, #00ff41);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+  }
+
+  .text-neon {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+
   @keyframes float {
     0%, 100% {
       transform: translateY(0px);
@@ -125,7 +158,29 @@
     }
   }
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+    }
+    to {
+      box-shadow: 0 0 30px rgba(255, 0, 128, 0.8), 0 0 40px rgba(255, 0, 128, 0.6);
+    }
+  }
+
+  @keyframes rainbow {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 }
