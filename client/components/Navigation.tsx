@@ -51,10 +51,10 @@ const Navigation = () => {
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                  className="text-white hover:text-transparent hover:bg-gradient-to-r hover:from-pink-400 hover:to-cyan-400 hover:bg-clip-text px-4 py-2 text-lg font-bold transition-all duration-300 relative group"
                 >
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-pink-500 to-cyan-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
                 </button>
               ))}
             </div>
@@ -64,9 +64,9 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 transition-colors duration-200"
+              className="text-white hover:text-pink-400 transition-colors duration-200 p-2"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
