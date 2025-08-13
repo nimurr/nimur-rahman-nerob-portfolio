@@ -67,27 +67,27 @@ export default function Index() {
 
   const blogPosts = [
     {
-      title: 'The Future of Web Animations',
-      excerpt: 'Exploring cutting-edge animation techniques with CSS, JavaScript, and WebGL for immersive user experiences.',
+      title: 'Mastering React.js Hooks',
+      excerpt: 'Deep dive into React hooks and how to build modern, efficient components using useState, useEffect, and custom hooks.',
       date: 'Dec 15, 2023',
       readTime: '8 min read',
-      category: 'Animation',
+      category: 'React.js',
       gradient: 'from-purple-500 to-pink-500'
     },
     {
-      title: 'Building with AI Integration',
-      excerpt: 'How to integrate AI APIs and machine learning models into modern web applications for enhanced user experiences.',
+      title: 'MERN Stack Best Practices',
+      excerpt: 'Complete guide to building scalable web applications with MongoDB, Express.js, React.js, and Node.js.',
       date: 'Dec 10, 2023',
       readTime: '12 min read',
-      category: 'AI/ML',
+      category: 'MERN',
       gradient: 'from-cyan-500 to-blue-500'
     },
     {
-      title: 'Designing for Accessibility',
-      excerpt: 'Creating inclusive digital experiences that work for everyone, with practical tips and real-world examples.',
+      title: 'Modern CSS Techniques',
+      excerpt: 'Exploring advanced CSS features, flexbox, grid, and responsive design principles for beautiful web interfaces.',
       date: 'Dec 5, 2023',
       readTime: '10 min read',
-      category: 'UX/UI',
+      category: 'CSS',
       gradient: 'from-green-500 to-emerald-500'
     },
   ];
