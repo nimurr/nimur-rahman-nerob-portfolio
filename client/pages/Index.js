@@ -861,7 +861,7 @@ export default function Index() {
                 React.createElement(
                   "div",
                   {
-                    className: `w-full lg:w-5/12 pl-16 lg:pl-0 lg:${index % 2 === 0 ? "text-right lg:pr-8" : "text-left lg:pl-8"}`,
+                    className: `w-full lg:w-5/12 pl-16 lg:pl-0 ${index % 2 === 0 ? "lg:text-right lg:pr-8" : "lg:text-left lg:pl-8"}`,
                   },
                   React.createElement(
                     "div",
