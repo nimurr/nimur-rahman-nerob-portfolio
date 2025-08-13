@@ -818,7 +818,7 @@ export default function Index() {
           ),
           React.createElement(
             "p",
-            { className: "text-2xl text-gray-300 max-w-3xl mx-auto" },
+            { className: "text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto" },
             "The evolution of a ",
             React.createElement(
               "span",
