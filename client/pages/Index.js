@@ -1267,6 +1267,53 @@ export default function Index() {
               ),
             ),
           ),
+
+          // Contact Form
+          React.createElement('div', { className: 'relative' },
+            React.createElement('div', { className: 'absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur opacity-30' }),
+            React.createElement('div', { className: 'relative glassmorphism rounded-3xl p-10 border border-white/20' },
+              React.createElement('form', { className: 'space-y-6' },
+                React.createElement('div', null,
+                  React.createElement('label', { htmlFor: 'name', className: 'block text-lg font-bold text-white mb-3' }, 'Name'),
+                  React.createElement('input', {
+                    type: 'text',
+                    id: 'name',
+                    className: 'w-full px-6 py-4 bg-black/50 border border-white/20 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all text-white placeholder-gray-400 backdrop-blur-sm',
+                    placeholder: 'Your awesome name'
+                  })
+                ),
+                React.createElement('div', null,
+                  React.createElement('label', { htmlFor: 'email', className: 'block text-lg font-bold text-white mb-3' }, 'Email'),
+                  React.createElement('input', {
+                    type: 'email',
+                    id: 'email',
+                    className: 'w-full px-6 py-4 bg-black/50 border border-white/20 rounded-xl focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all text-white placeholder-gray-400 backdrop-blur-sm',
+                    placeholder: 'your@email.com'
+                  })
+                ),
+                React.createElement('div', null,
+                  React.createElement('label', { htmlFor: 'message', className: 'block text-lg font-bold text-white mb-3' }, 'Message'),
+                  React.createElement('textarea', {
+                    id: 'message',
+                    rows: 6,
+                    className: 'w-full px-6 py-4 bg-black/50 border border-white/20 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all text-white placeholder-gray-400 backdrop-blur-sm resize-none',
+                    placeholder: 'Tell me about your incredible project idea...'
+                  })
+                ),
+                React.createElement('button', {
+                  type: 'submit',
+                  className: 'w-full relative group overflow-hidden rounded-xl py-4 font-bold text-lg'
+                },
+                  React.createElement('div', { className: 'absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 opacity-80 group-hover:opacity-100 transition-opacity' }),
+                  React.createElement('div', { className: 'absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 blur group-hover:blur-lg transition-all' }),
+                  React.createElement('div', { className: 'relative flex items-center justify-center space-x-3 text-white' },
+                    React.createElement(Send, { className: 'w-6 h-6' }),
+                    React.createElement('span', null, 'Launch Project 🚀')
+                  )
+                )
+              )
+            )
+          )
         ),
       ),
     ),
