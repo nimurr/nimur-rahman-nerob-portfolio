@@ -470,7 +470,7 @@ export default function Index() {
                   React.createElement(
                     "div",
                     { className: "text-3xl font-bold text-white" },
-                    "50K+",
+                    "35K+",
                   ),
                   React.createElement(
                     "div",
