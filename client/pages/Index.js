@@ -67,31 +67,34 @@ export default function Index() {
 
   const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
+      title: "Full-Stack Developer",
+      company: "Bdcalling IT LTD",
+      period: "Nov 2024 - Present",
+      location: "Banasree, Dhaka",
       description:
-        "Leading frontend development for modern web applications using React, TypeScript, and advanced CSS frameworks.",
+        "Developing full-stack applications using MERN stack technologies, implementing modern web solutions and working on diverse client projects.",
       color: "from-pink-500 to-violet-500",
+      website: "https://bdcalling.com/"
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
-      location: "New York, NY",
+      title: "Full-Stack Developer",
+      company: "Hollow Digital",
+      period: "July 2024 - Oct 2024",
+      location: "Mirpur, Dhaka",
       description:
-        "Developed and maintained full-stack applications, implemented responsive designs, and optimized application performance.",
+        "Worked on full-stack development projects, building responsive web applications and implementing backend solutions using modern technologies.",
       color: "from-cyan-500 to-blue-500",
+      website: "hollowdigital.com"
     },
     {
-      title: "Frontend Developer",
-      company: "Creative Agency",
-      period: "2018 - 2020",
-      location: "Los Angeles, CA",
+      title: "Front-end Developer",
+      company: "Bangladeshi Software",
+      period: "Aug 2023 - Dec 2023",
+      location: "Dinajpur, Bangladesh",
       description:
-        "Created stunning user interfaces and interactive web experiences for various clients across different industries.",
+        "Focused on frontend development using React.js, created user interfaces and implemented responsive designs for various web applications.",
       color: "from-emerald-500 to-teal-500",
+      website: "bangladeshisoftware.com"
     },
   ];
 
