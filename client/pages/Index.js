@@ -891,7 +891,7 @@ export default function Index() {
                         "div",
                         {
                           className:
-                            "flex items-center space-x-4 mb-4 text-gray-400",
+                            "flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-2 sm:space-y-0 mb-4 text-gray-400",
                         },
                         React.createElement(
                           "div",
