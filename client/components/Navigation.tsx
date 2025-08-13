@@ -74,13 +74,13 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md border-t">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-white/10">
+          <div className="px-4 pt-4 pb-6 space-y-2">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
+                className="block w-full text-left px-4 py-3 text-lg font-bold text-white hover:text-transparent hover:bg-gradient-to-r hover:from-pink-400 hover:to-cyan-400 hover:bg-clip-text hover:bg-white/10 rounded-xl transition-all duration-300"
               >
                 {item.name}
               </button>
