@@ -1,3 +1,4 @@
+import React from 'react';
 import Navigation from '../components/Navigation.js';
 import { ArrowDown, Github, Linkedin, Mail, ExternalLink, Calendar, MapPin, Code, Palette, Database, Globe, User, Award, BookOpen, Send, Star, Zap, Heart, Sparkles, Camera, Play, Music } from 'lucide-react';
 
