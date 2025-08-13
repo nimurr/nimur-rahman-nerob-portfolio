@@ -116,18 +116,18 @@ export default function Index() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div className="relative">
-              <h1 className="text-6xl md:text-9xl font-black tracking-tight text-white mb-4">
-                CREATIVE
+              <h1 className="text-4xl md:text-7xl font-black tracking-tight text-white mb-4">
+                NIMUR RAHMAN
               </h1>
-              <h1 className="text-6xl md:text-9xl font-black tracking-tight gradient-text animate-rainbow">
-                DEVELOPER
+              <h1 className="text-4xl md:text-7xl font-black tracking-tight gradient-text animate-rainbow">
+                NEROB
               </h1>
               <div className="absolute -inset-4 bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-cyan-500/20 blur-3xl animate-pulse"></div>
             </div>
-            
+
             <p className="text-xl md:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light">
-              Crafting <span className="text-neon font-bold">next-generation</span> digital experiences with 
-              <span className="bg-gradient-to-r from-pink-400 to-violet-400 bg-clip-text text-transparent font-bold"> cutting-edge</span> technology
+              <span className="text-neon font-bold">MERN Stack Developer</span> • Professional front-end developer who loves
+              <span className="bg-gradient-to-r from-pink-400 to-violet-400 bg-clip-text text-transparent font-bold"> creativity</span> and making something new
             </p>
             
             {/* Social Links with Glow */}
