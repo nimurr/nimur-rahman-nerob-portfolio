@@ -808,7 +808,7 @@ export default function Index() {
           { className: "text-center mb-20" },
           React.createElement(
             "h2",
-            { className: "text-6xl font-black text-white mb-6" },
+            { className: "text-4xl md:text-6xl font-black text-white mb-6" },
             "My ",
             React.createElement(
               "span",
