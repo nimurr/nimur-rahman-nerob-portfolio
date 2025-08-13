@@ -28,10 +28,28 @@ import {
 export default function Index() {
   const skills = [
     {
+      name: "HTML & CSS",
+      level: 95,
+      icon: React.createElement(Palette, { className: "w-6 h-6" }),
+      color: "from-pink-500 to-rose-500",
+    },
+    {
+      name: "Tailwind CSS",
+      level: 95,
+      icon: React.createElement(Palette, { className: "w-6 h-6" }),
+      color: "from-green-500 to-lime-500",
+    },
+    {
       name: "React.js",
       level: 95,
       icon: React.createElement(Code, { className: "w-6 h-6" }),
       color: "from-cyan-400 to-blue-500",
+    },
+    {
+      name: "Next.js",
+      level: 95,
+      icon: React.createElement(Code, { className: "w-6 h-6" }),
+      color: "from-pink-400 to-purple-500",
     },
     {
       name: "JavaScript",
@@ -39,12 +57,7 @@ export default function Index() {
       icon: React.createElement(Code, { className: "w-6 h-6" }),
       color: "from-yellow-400 to-orange-500",
     },
-    {
-      name: "HTML & CSS",
-      level: 95,
-      icon: React.createElement(Palette, { className: "w-6 h-6" }),
-      color: "from-pink-500 to-rose-500",
-    },
+
     {
       name: "Node.js",
       level: 85,
