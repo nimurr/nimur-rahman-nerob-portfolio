@@ -505,7 +505,7 @@ export default function Index() {
                   },
                   React.createElement(
                     "div",
-                    { className: "text-center space-y-4" },
+                    { className: "text-center space-y-4", style: { animation: "reverse-spin 20s linear infinite" } },
                     React.createElement(
                       "div",
                       {
