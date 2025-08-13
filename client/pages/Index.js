@@ -576,6 +576,7 @@ export default function Index() {
                   }),
                 ),
               ),
+             
               React.createElement(
                 "div",
                 {
@@ -666,6 +667,27 @@ export default function Index() {
                       className: "text-white font-bold text-lg",
                     },
                     "JS",
+                  ),
+                ),
+              ),
+              React.createElement(
+                "div",
+                {
+                  className: "absolute bottom-20 right-20 animate-float",
+                  style: { animationDelay: "7s" },
+                },
+                React.createElement(
+                  "div",
+                  {
+                    className:
+                      "w-14 h-14 rounded-full bg-gradient-to-r from-red-500 to-rose-500 flex items-center justify-center animate-glow",
+                  },
+                  React.createElement(
+                    "span",
+                    {
+                      className: "text-white font-bold text-lg",
+                    },
+                    "R",
                   ),
                 ),
               ),
