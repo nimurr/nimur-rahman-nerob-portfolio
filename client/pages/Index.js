@@ -297,6 +297,187 @@ export default function Index() {
       )
     ),
 
+    // Experience Section - Timeline Design
+    React.createElement('section', { id: 'experience', className: 'py-32 bg-gradient-to-br from-cyan-900/10 via-black to-purple-900/10' },
+      React.createElement('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
+        React.createElement('div', { className: 'text-center mb-20' },
+          React.createElement('h2', { className: 'text-6xl font-black text-white mb-6' },
+            'My ',
+            React.createElement('span', { className: 'gradient-text' }, 'Journey')
+          ),
+          React.createElement('p', { className: 'text-2xl text-gray-300 max-w-3xl mx-auto' },
+            'The evolution of a ',
+            React.createElement('span', { className: 'text-neon font-bold' }, 'digital creator')
+          )
+        ),
+
+        React.createElement('div', { className: 'relative' },
+          // Timeline Line
+          React.createElement('div', { className: 'absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-pink-500 via-purple-500 to-cyan-500' }),
+
+          React.createElement('div', { className: 'space-y-20' },
+            experiences.map((experience, index) =>
+              React.createElement('div', { key: index, className: `relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}` },
+                // Timeline Dot
+                React.createElement('div', { className: 'absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 border-4 border-black z-10' }),
+
+                React.createElement('div', { className: `w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}` },
+                  React.createElement('div', { className: 'relative group' },
+                    React.createElement('div', { className: `absolute inset-0 bg-gradient-to-r ${experience.color} rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity` }),
+                    React.createElement('div', { className: 'relative glassmorphism rounded-2xl p-8 border border-white/10 group-hover:border-white/30 transition-all' },
+                      React.createElement('h3', { className: 'text-2xl font-bold text-white mb-2' }, experience.title),
+                      React.createElement('p', { className: `text-xl font-semibold bg-gradient-to-r ${experience.color} bg-clip-text text-transparent mb-4` },
+                        experience.company
+                      ),
+                      React.createElement('div', { className: 'flex items-center space-x-4 mb-4 text-gray-400' },
+                        React.createElement('div', { className: 'flex items-center space-x-2' },
+                          React.createElement(Calendar, { className: 'w-4 h-4' }),
+                          React.createElement('span', null, experience.period)
+                        ),
+                        React.createElement('div', { className: 'flex items-center space-x-2' },
+                          React.createElement(MapPin, { className: 'w-4 h-4' }),
+                          React.createElement('span', null, experience.location)
+                        )
+                      ),
+                      React.createElement('p', { className: 'text-gray-300 leading-relaxed' }, experience.description)
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    ),
+
+    // Projects Section - 3D Cards
+    React.createElement('section', { id: 'projects', className: 'py-32 bg-gradient-to-br from-black via-pink-900/10 to-black' },
+      React.createElement('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
+        React.createElement('div', { className: 'text-center mb-20' },
+          React.createElement('h2', { className: 'text-6xl font-black text-white mb-6' },
+            'Featured ',
+            React.createElement('span', { className: 'gradient-text' }, 'Creations')
+          ),
+          React.createElement('p', { className: 'text-2xl text-gray-300 max-w-3xl mx-auto' },
+            'Groundbreaking projects that showcase ',
+            React.createElement('span', { className: 'text-neon font-bold' }, 'innovation'),
+            ' and creativity'
+          )
+        ),
+
+        React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10' },
+          projects.map((project, index) =>
+            React.createElement('div', { key: index, className: 'group relative transform transition-all duration-500 hover:scale-105' },
+              React.createElement('div', { className: `absolute inset-0 bg-gradient-to-r ${project.gradient} rounded-3xl blur opacity-50 group-hover:opacity-80 transition-opacity` }),
+              React.createElement('div', { className: 'relative glassmorphism rounded-3xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all' },
+                // Project Image/Visual
+                React.createElement('div', { className: `h-48 bg-gradient-to-r ${project.gradient} relative overflow-hidden` },
+                  React.createElement('div', { className: 'absolute inset-0 bg-black/20' }),
+                  React.createElement('div', { className: 'absolute inset-0 flex items-center justify-center' },
+                    React.createElement('div', { className: 'text-center' },
+                      React.createElement('div', { className: 'w-16 h-16 mx-auto rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4' },
+                        React.createElement(Play, { className: 'w-8 h-8 text-white' })
+                      ),
+                      React.createElement('div', { className: 'text-white font-bold' }, 'Live Preview')
+                    )
+                  ),
+
+                  // Floating Elements
+                  React.createElement('div', { className: 'absolute top-4 right-4 animate-float' },
+                    React.createElement(Camera, { className: 'w-6 h-6 text-white/80' })
+                  ),
+                  React.createElement('div', { className: 'absolute bottom-4 left-4 animate-float', style: { animationDelay: '2s' } },
+                    React.createElement(Music, { className: 'w-6 h-6 text-white/80' })
+                  )
+                ),
+
+                React.createElement('div', { className: 'p-8' },
+                  React.createElement('h3', { className: 'text-2xl font-bold text-white mb-3' }, project.title),
+                  React.createElement('p', { className: 'text-gray-300 mb-6 leading-relaxed' }, project.description),
+
+                  // Tech Stack
+                  React.createElement('div', { className: 'flex flex-wrap gap-2 mb-6' },
+                    project.technologies.map((tech, techIndex) =>
+                      React.createElement('span', { key: techIndex, className: `px-3 py-1 text-sm rounded-full bg-gradient-to-r ${project.gradient} text-white font-medium` },
+                        tech
+                      )
+                    )
+                  ),
+
+                  // Action Buttons
+                  React.createElement('div', { className: 'flex space-x-4' },
+                    React.createElement('a', { href: project.liveUrl, className: 'flex-1 group/btn relative overflow-hidden rounded-full' },
+                      React.createElement('div', { className: `absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-80 group-hover/btn:opacity-100 transition-opacity` }),
+                      React.createElement('div', { className: 'relative px-6 py-3 text-center' },
+                        React.createElement('div', { className: 'flex items-center justify-center space-x-2 text-white font-bold' },
+                          React.createElement(ExternalLink, { className: 'w-4 h-4' }),
+                          React.createElement('span', null, 'Live Demo')
+                        )
+                      )
+                    ),
+                    React.createElement('a', { href: project.githubUrl, className: 'px-6 py-3 rounded-full border border-white/30 text-white hover:bg-white/10 transition-all flex items-center space-x-2' },
+                      React.createElement(Github, { className: 'w-4 h-4' }),
+                      React.createElement('span', null, 'Code')
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    ),
+
+    // Blog Section - Modern Cards
+    React.createElement('section', { id: 'blog', className: 'py-32 bg-gradient-to-br from-purple-900/10 via-black to-cyan-900/10' },
+      React.createElement('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' },
+        React.createElement('div', { className: 'text-center mb-20' },
+          React.createElement('h2', { className: 'text-6xl font-black text-white mb-6' },
+            'Latest ',
+            React.createElement('span', { className: 'gradient-text' }, 'Insights')
+          ),
+          React.createElement('p', { className: 'text-2xl text-gray-300 max-w-3xl mx-auto' },
+            'Thoughts and tutorials on the ',
+            React.createElement('span', { className: 'text-neon font-bold' }, 'future'),
+            ' of web development'
+          )
+        ),
+
+        React.createElement('div', { className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8' },
+          blogPosts.map((post, index) =>
+            React.createElement('article', { key: index, className: 'group relative transform transition-all duration-500 hover:scale-105' },
+              React.createElement('div', { className: `absolute inset-0 bg-gradient-to-r ${post.gradient} rounded-2xl blur opacity-30 group-hover:opacity-60 transition-opacity` }),
+              React.createElement('div', { className: 'relative glassmorphism rounded-2xl overflow-hidden border border-white/10 group-hover:border-white/30 transition-all' },
+                React.createElement('div', { className: 'p-8' },
+                  React.createElement('div', { className: 'flex items-center justify-between mb-6' },
+                    React.createElement('span', { className: `px-4 py-2 rounded-full text-sm font-bold bg-gradient-to-r ${post.gradient} text-white` },
+                      post.category
+                    ),
+                    React.createElement('div', { className: 'flex items-center space-x-2 text-gray-400 text-sm' },
+                      React.createElement(BookOpen, { className: 'w-4 h-4' }),
+                      React.createElement('span', null, post.readTime)
+                    )
+                  ),
+
+                  React.createElement('h3', { className: 'text-2xl font-bold text-white mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-pink-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all' },
+                    post.title
+                  ),
+                  React.createElement('p', { className: 'text-gray-300 mb-6 leading-relaxed' }, post.excerpt),
+
+                  React.createElement('div', { className: 'flex items-center justify-between' },
+                    React.createElement('span', { className: 'text-gray-500 text-sm' }, post.date),
+                    React.createElement('button', { className: `px-6 py-2 rounded-full font-bold bg-gradient-to-r ${post.gradient} text-white hover:shadow-lg hover:shadow-pink-500/25 transition-all` },
+                      'Read More →'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    ),
+
     // Contact Section
     React.createElement('section', { id: 'contact', className: 'py-32 relative' },
       React.createElement('div', { className: 'absolute inset-0 gradient-bg-animated opacity-20' }),
