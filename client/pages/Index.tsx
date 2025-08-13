@@ -586,8 +586,8 @@ export default function Index() {
       <footer className="bg-black border-t border-white/10 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="text-4xl font-black gradient-text mb-4">Portfolio</div>
-            <p className="text-gray-400 text-lg">&copy; 2024 Creative Developer. Crafting the future, one pixel at a time.</p>
+            <div className="text-4xl font-black gradient-text mb-4">Nimur Rahman Nerob</div>
+            <p className="text-gray-400 text-lg">&copy; 2024 MERN Stack Developer. Crafting the future, one pixel at a time.</p>
           </div>
         </div>
       </footer>
