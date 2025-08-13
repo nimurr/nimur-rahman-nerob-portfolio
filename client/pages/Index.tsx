@@ -492,13 +492,19 @@ export default function Index() {
                     <div className="p-4 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 group-hover:scale-110 transition-transform">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
-                    <span className="text-xl text-gray-300 group-hover:text-white transition-colors">hello@portfolio.com</span>
+                    <span className="text-xl text-gray-300 group-hover:text-white transition-colors">nimurnerob404@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-4 group">
                     <div className="p-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 group-hover:scale-110 transition-transform">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
-                    <span className="text-xl text-gray-300 group-hover:text-white transition-colors">San Francisco, CA</span>
+                    <span className="text-xl text-gray-300 group-hover:text-white transition-colors">Thakurgaon, Bangladesh</span>
+                  </div>
+                  <div className="flex items-center space-x-4 group">
+                    <div className="p-4 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 group-hover:scale-110 transition-transform">
+                      <Mail className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="text-xl text-gray-300 group-hover:text-white transition-colors">+88 01708784404</span>
                   </div>
                 </div>
                 
