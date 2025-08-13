@@ -74,7 +74,7 @@ export default function Index() {
       description:
         "Developing full-stack applications using MERN stack technologies, implementing modern web solutions and working on diverse client projects.",
       color: "from-pink-500 to-violet-500",
-      website: "https://bdcalling.com/"
+      website: "https://bdcalling.com/",
     },
     {
       title: "Full-Stack Developer",
@@ -84,7 +84,7 @@ export default function Index() {
       description:
         "Worked on full-stack development projects, building responsive web applications and implementing backend solutions using modern technologies.",
       color: "from-cyan-500 to-blue-500",
-      website: "hollowdigital.com"
+      website: "hollowdigital.com",
     },
     {
       title: "Front-end Developer",
@@ -94,7 +94,7 @@ export default function Index() {
       description:
         "Focused on frontend development using React.js, created user interfaces and implemented responsive designs for various web applications.",
       color: "from-emerald-500 to-teal-500",
-      website: "bangladeshisoftware.com"
+      website: "bangladeshisoftware.com",
     },
   ];
 
