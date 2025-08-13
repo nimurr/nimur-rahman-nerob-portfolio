@@ -831,32 +831,37 @@ export default function Index() {
         React.createElement(
           "div",
           { className: "relative" },
-          // Timeline Line
+          // Timeline Line - Hidden on mobile, visible on desktop
           React.createElement("div", {
             className:
-              "absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-pink-500 via-purple-500 to-cyan-500",
+              "hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-pink-500 via-purple-500 to-cyan-500",
+          }),
+          // Mobile Timeline Line - Left aligned for mobile
+          React.createElement("div", {
+            className:
+              "lg:hidden absolute left-8 top-0 w-1 h-full bg-gradient-to-b from-pink-500 via-purple-500 to-cyan-500",
           }),
 
           React.createElement(
             "div",
-            { className: "space-y-20" },
+            { className: "space-y-12 lg:space-y-20" },
             experiences.map((experience, index) =>
               React.createElement(
                 "div",
                 {
                   key: index,
-                  className: `relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"}`,
+                  className: `relative flex items-center lg:${index % 2 === 0 ? "justify-start" : "justify-end"} justify-start`,
                 },
-                // Timeline Dot
+                // Timeline Dot - Desktop center, Mobile left
                 React.createElement("div", {
                   className:
-                    "absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 border-4 border-black z-10",
+                    "absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 left-6 w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 to-cyan-500 border-4 border-black z-10",
                 }),
 
                 React.createElement(
                   "div",
                   {
-                    className: `w-5/12 ${index % 2 === 0 ? "text-right pr-8" : "text-left pl-8"}`,
+                    className: `w-full lg:w-5/12 pl-16 lg:pl-0 lg:${index % 2 === 0 ? "text-right lg:pr-8" : "text-left lg:pl-8"}`,
                   },
                   React.createElement(
                     "div",
