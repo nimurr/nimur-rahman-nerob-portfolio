@@ -179,13 +179,13 @@ export default function Index() {
                   About <span className="gradient-text">Me</span>
                 </h2>
                 <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-                  I'm a <span className="text-neon font-bold">visionary developer</span> who transforms ideas into 
-                  stunning digital realities. With <span className="text-pink-400 font-bold">5+ years</span> of experience, 
-                  I specialize in creating immersive experiences that push the boundaries of what's possible on the web.
+                  I'm a professional <span className="text-neon font-bold">front-end developer</span> and <span className="text-pink-400 font-bold">React.js Developer</span>.
+                  I love to use my creativity and make something new. Try creating visually appealing and highly functional web interfaces.
+                  Proficient in HTML, CSS, and JavaScript with a strong foundation in modern front-end frameworks React.
                 </p>
                 <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                  When I'm not coding the future, you'll find me exploring <span className="text-cyan-400 font-bold">AI technologies</span>, 
-                  contributing to open source, or sharing knowledge with the developer community.
+                  Specializing in <span className="text-cyan-400 font-bold">MERN Stack development</span> - a collection of powerful technologies
+                  used to develop scalable master web applications comprising backend, front-end, and database components.
                 </p>
                 
                 {/* Stats */}
