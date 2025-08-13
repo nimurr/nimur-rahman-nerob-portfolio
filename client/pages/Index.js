@@ -446,7 +446,7 @@ export default function Index() {
                   React.createElement(
                     "div",
                     { className: "text-3xl font-bold text-white" },
-                    "100+",
+                    "20+",
                   ),
                   React.createElement(
                     "div",
