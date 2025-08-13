@@ -574,6 +574,93 @@ export default function Index() {
                   }),
                 ),
               ),
+
+              // Additional Tech Icons
+              React.createElement(
+                "div",
+                {
+                  className: "absolute top-1/2 right-0 animate-float",
+                  style: { animationDelay: "1s" },
+                },
+                React.createElement(
+                  "div",
+                  {
+                    className:
+                      "w-16 h-16 rounded-full bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center animate-glow",
+                  },
+                  React.createElement(Database, {
+                    className: "w-8 h-8 text-white",
+                  }),
+                ),
+              ),
+              React.createElement(
+                "div",
+                {
+                  className: "absolute top-4 left-1/2 transform -translate-x-1/2 animate-float",
+                  style: { animationDelay: "3s" },
+                },
+                React.createElement(
+                  "div",
+                  {
+                    className:
+                      "w-16 h-16 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center animate-glow",
+                  },
+                  React.createElement(Globe, {
+                    className: "w-8 h-8 text-white",
+                  }),
+                ),
+              ),
+              React.createElement(
+                "div",
+                {
+                  className: "absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-float",
+                  style: { animationDelay: "5s" },
+                },
+                React.createElement(
+                  "div",
+                  {
+                    className:
+                      "w-16 h-16 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center animate-glow",
+                  },
+                  React.createElement(Palette, {
+                    className: "w-8 h-8 text-white",
+                  }),
+                ),
+              ),
+              React.createElement(
+                "div",
+                {
+                  className: "absolute top-20 left-20 animate-float",
+                  style: { animationDelay: "6s" },
+                },
+                React.createElement(
+                  "div",
+                  {
+                    className:
+                      "w-14 h-14 rounded-full bg-gradient-to-r from-teal-500 to-cyan-500 flex items-center justify-center animate-glow",
+                  },
+                  React.createElement("span", {
+                    className: "text-white font-bold text-lg",
+                  }, "JS"),
+                ),
+              ),
+              React.createElement(
+                "div",
+                {
+                  className: "absolute bottom-20 right-20 animate-float",
+                  style: { animationDelay: "7s" },
+                },
+                React.createElement(
+                  "div",
+                  {
+                    className:
+                      "w-14 h-14 rounded-full bg-gradient-to-r from-red-500 to-rose-500 flex items-center justify-center animate-glow",
+                  },
+                  React.createElement("span", {
+                    className: "text-white font-bold text-lg",
+                  }, "R"),
+                ),
+              ),
             ),
           ),
         ),
