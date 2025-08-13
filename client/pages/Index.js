@@ -547,7 +547,7 @@ export default function Index() {
               // Floating Icons
               React.createElement(
                 "div",
-                { className: "absolute top-10 right-10 animate-float" },
+                { className: "absolute top-24 right-12 animate-float" },
                 React.createElement(
                   "div",
                   {
@@ -562,7 +562,7 @@ export default function Index() {
               React.createElement(
                 "div",
                 {
-                  className: "absolute bottom-10 left-10 animate-float",
+                  className: "absolute bottom-20 left-20 animate-float",
                   style: { animationDelay: "2s" },
                 },
                 React.createElement(
@@ -616,7 +616,7 @@ export default function Index() {
                 "div",
                 {
                   className:
-                    "absolute top-4 left-1/2 transform -translate-x-1/2 animate-float",
+                    "absolute top-1 left-1/2 transform -translate-x-1/2 animate-float",
                   style: { animationDelay: "3s" },
                 },
                 React.createElement(
@@ -634,7 +634,7 @@ export default function Index() {
                 "div",
                 {
                   className:
-                    "absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-float",
+                    "absolute bottom-0 left-1/2 transform -translate-x-1/2 animate-float",
                   style: { animationDelay: "5s" },
                 },
                 React.createElement(
