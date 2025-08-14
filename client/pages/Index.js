@@ -81,6 +81,7 @@ export default function Index() {
   const experiences = [
     {
       title: "Full-Stack Developer",
+
       company: "Bdcalling IT LTD",
       period: "Nov 2024 - Present",
       location: "Banasree, Dhaka",
@@ -113,22 +114,25 @@ export default function Index() {
 
   const projects = [
     {
-      title: "React E-commerce Platform",
+      title: "School Management System App Backend",
+      topbgImage: 'https://res.cloudinary.com/nerob/image/upload/v1755140118/Protfolio/Prototype_ks6erd.png',
       description:
-        "A modern e-commerce platform built with React.js, featuring user authentication, product catalog, and shopping cart functionality.",
+        //this is the school management system app and i worked on the   backend
+        "Built the backend for a School Management System with secure APIs, database management, and efficient data handling.",
       gradient: "from-purple-600 via-pink-600 to-blue-600",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
-      liveUrl: "#",
-      githubUrl: "#",
+      technologies: ["Node.js", "MongoDB", "Express.js", "JWT", "Infobip"],
+      liveUrl: "https://play.google.com/store/apps/details?id=com.niki.koukoutsa",
+      githubUrl: "https://github.com/sparktechagency/Koukoutsa-Backend2.0",
     },
     {
-      title: "MERN Social Media App",
+      title: "Ggd-menke agrilog app - Backend",
+      topbgImage: 'https://res.cloudinary.com/nerob/image/upload/v1755141342/Protfolio/1748269501445_d73ebq.jpg',
       description:
-        "A full-stack social media application with real-time messaging, post sharing, and user interactions built with MERN stack.",
+        "Developed the backend for the Ggd-Menke Agrilog app, implementing secure APIs and efficient database management for seamless data processing.",
       gradient: "from-cyan-500 via-blue-500 to-indigo-600",
-      technologies: ["React.js", "Node.js", "MongoDB", "Express.js"],
+      technologies: ["Node.js", "MongoDB", "Express.js"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/sparktechagency/Task-Management-Backend",
     },
     {
       title: "React Dashboard",
@@ -576,7 +580,7 @@ export default function Index() {
                   }),
                 ),
               ),
-             
+
               React.createElement(
                 "div",
                 {
@@ -1030,7 +1034,8 @@ export default function Index() {
                 React.createElement(
                   "div",
                   {
-                    className: `h-48 bg-gradient-to-r ${project.gradient} relative overflow-hidden`,
+                    className: `h-48 bg-cover bg-center relative overflow-hidden`,
+                    style: { backgroundImage: `url('${project.topbgImage}')` },  // Dynamically set background image
                   },
                   React.createElement("div", {
                     className: "absolute inset-0 bg-black/20",
@@ -1060,25 +1065,6 @@ export default function Index() {
                         "Live Preview",
                       ),
                     ),
-                  ),
-
-                  // Floating Elements
-                  React.createElement(
-                    "div",
-                    { className: "absolute top-4 right-4 animate-float" },
-                    React.createElement(Camera, {
-                      className: "w-6 h-6 text-white/80",
-                    }),
-                  ),
-                  React.createElement(
-                    "div",
-                    {
-                      className: "absolute bottom-4 left-4 animate-float",
-                      style: { animationDelay: "2s" },
-                    },
-                    React.createElement(Music, {
-                      className: "w-6 h-6 text-white/80",
-                    }),
                   ),
                 ),
 
@@ -1155,7 +1141,8 @@ export default function Index() {
                   ),
                 ),
               ),
-            ),
+            )
+
           ),
         ),
       ),
