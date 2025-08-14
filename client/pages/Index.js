@@ -135,13 +135,14 @@ export default function Index() {
       githubUrl: "https://github.com/sparktechagency/Task-Management-Backend",
     },
     {
-      title: "React Dashboard",
+      title: "Sellify fullstack admin dashboard",
+      topbgImage: 'https://res.cloudinary.com/nerob/image/upload/v1755141512/Protfolio/1747216445100_pacfhk.jpg',
       description:
-        "A responsive admin dashboard with data visualization, user management, and analytics built with React and modern UI libraries.",
+        "uilt the Sellify Fullstack Admin Dashboard with secure backend APIs and a responsive frontend for managing products, orders, and users.",
       gradient: "from-pink-500 via-red-500 to-orange-500",
       technologies: ["React.js", "Chart.js", "Material-UI", "REST API"],
-      liveUrl: "#",
-      githubUrl: "#",
+      liveUrl: "https://www.sellify.gg/",
+      githubUrl: "https://github.com/Sellifyapp/Sellify-Website",
     },
   ];
 
