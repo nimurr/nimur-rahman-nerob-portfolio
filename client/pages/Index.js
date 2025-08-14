@@ -148,33 +148,40 @@ export default function Index() {
 
   const blogPosts = [
     {
-      title: "Mastering React.js Hooks",
+      title: "MERN Stack Best Practices",
       excerpt:
-        "Deep dive into React hooks and how to build modern, efficient components using useState, useEffect, and custom hooks.",
+        "MERN Stack Best Practices is a project focused on building efficient, scalable, and maintainable web applications using MongoDB, Express.js, React.js, and Node.js. In this project, I implemented best practices for project structure, API design, and database modeling...",
+      date: "Feb 10, 2025",
+      readTime: "12 min read",
+      category: "MERN",
+      gradient: "from-cyan-500 to-blue-500",
+      postUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7234590621401800707/"
+    },
+    {
+      title: "Why Choose Node.js for Your Backend?",
+      excerpt:
+        "Node.js has become one of the most popular frameworks for building scalable and efficient server-side applications. Below are some key reasons why developers and businesses choose Node.js:",
+      date: "Dec 5, 2024",
+      readTime: "10 min read",
+      category: "Node.js",
+      gradient: "from-green-500 to-emerald-500",
+      postUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7328358590350528514/"
+    },
+    {
+      title: "Mastering React.js ",
+      excerpt:
+        "Mastering React.js is a comprehensive learning project focused on building a strong foundation and advanced skills in React.js. In this project, I explored the core concepts of React, including components, JSX, state management, props, lifecycle...",
       date: "Dec 15, 2023",
       readTime: "8 min read",
       category: "React.js",
       gradient: "from-purple-500 to-pink-500",
-    },
-    {
-      title: "MERN Stack Best Practices",
-      excerpt:
-        "Complete guide to building scalable web applications with MongoDB, Express.js, React.js, and Node.js.",
-      date: "Dec 10, 2023",
-      readTime: "12 min read",
-      category: "MERN",
-      gradient: "from-cyan-500 to-blue-500",
-    },
-    {
-      title: "Modern CSS Techniques",
-      excerpt:
-        "Exploring advanced CSS features, flexbox, grid, and responsive design principles for beautiful web interfaces.",
-      date: "Dec 5, 2023",
-      readTime: "10 min read",
-      category: "CSS",
-      gradient: "from-green-500 to-emerald-500",
+      postUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7113803761692659712/"
     },
   ];
+
+  const handleReadMore = (postUrl) => {
+    window.open(postUrl.postUrl, "_blank");
+  };
 
   return React.createElement(
     "div",
@@ -1255,6 +1262,7 @@ export default function Index() {
                     React.createElement(
                       "button",
                       {
+                        onClick: () => handleReadMore(post),
                         className: `px-6 py-2 rounded-full font-bold bg-gradient-to-r ${post.gradient} text-white hover:shadow-lg hover:shadow-pink-500/25 transition-all`,
                       },
                       "Read More →",
