@@ -275,9 +275,9 @@ export default function Index() {
             React.createElement(
               "span",
               { className: "text-neon font-bold" },
-              "MERN Stack Developer",
+              "Software Developer",
             ),
-            " • Professional front-end developer who loves ",
+            " • Professional in React and Node.js • I want to explore my ",
             React.createElement(
               "span",
               {
@@ -286,7 +286,7 @@ export default function Index() {
               },
               "creativity",
             ),
-            " and making something new",
+            " and making something new .",
           ),
 
           // Social Links with Glow
@@ -432,27 +432,16 @@ export default function Index() {
                 React.createElement(
                   "span",
                   { className: "text-neon font-bold" },
-                  "front-end developer",
+                  "Software developer",
                 ),
-                " and ",
                 React.createElement(
                   "span",
                   { className: "text-pink-400 font-bold" },
-                  "React.js Developer",
+                  "",
                 ),
-                ". I love to use my creativity and make something new. Try creating visually appealing and highly functional web interfaces. Proficient in HTML, CSS, and JavaScript with a strong foundation in modern front-end frameworks React.",
+                ".I specialize in building scalable and interactive web applications using React.js for the frontend and Node.js, Express.js, and MongoDB for the backend. I have strong expertise in developing RESTful APIs, managing databases, and delivering full-stack solutions that are secure, efficient, and user-friendly. I focus on writing clean, maintainable code and enjoy solving real-world problems through technology. With a continuous drive to learn and innovate, I’m committed to creating impactful digital experiences that blend performance with modern design and usability.",
               ),
-              React.createElement(
-                "p",
-                { className: "text-xl text-gray-300 mb-8 leading-relaxed" },
-                "Specializing in ",
-                React.createElement(
-                  "span",
-                  { className: "text-cyan-400 font-bold" },
-                  "MERN Stack development",
-                ),
-                " - a collection of powerful technologies used to develop scalable master web applications comprising backend, front-end, and database components.",
-              ),
+             
 
               // Stats
               React.createElement(
