@@ -5,6 +5,7 @@ import {
   Github,
   Linkedin,
   Mail,
+  Video,
   ExternalLink,
   Calendar,
   MapPin,
@@ -350,6 +351,39 @@ export default function Index() {
                 }),
               ),
             ),
+            React.createElement(
+              "a",
+              {
+                href: "https://calendly.com/nimurnerob404/30min",
+                target: "_blank",
+                rel: "noopener noreferrer",   // 🔹 Add this
+                className: "group relative"
+              },
+              React.createElement("div", {
+                className:
+                  "absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-500 rounded-full blur opacity-60 group-hover:opacity-100 transition-opacity",
+              }),
+              React.createElement(
+                "div",
+                {
+                  className:
+                    "relative bg-black p-4 rounded-full border border-orange-500/50 group-hover:border-orange-500 transition-colors",
+                },
+                React.createElement("div", {
+                  className:
+                    "absolute h-3 w-3 bg-blue-500 rounded-full animate-ping right-0 top-0",
+                }),
+                React.createElement("div", {
+                  className:
+                    "absolute h-3 w-3 bg-blue-500 rounded-full right-0 top-0",
+                }),
+                React.createElement(Video, {
+                  className:
+                    "w-8 h-8 text-white group-hover:text-orange-400 transition-colors",
+                }),
+              ),
+            )
+
           ),
 
           // CTA Button
@@ -441,7 +475,7 @@ export default function Index() {
                 ),
                 ".I specialize in building scalable and interactive web applications using React.js for the frontend and Node.js, Express.js, and MongoDB for the backend. I have strong expertise in developing RESTful APIs, managing databases, and delivering full-stack solutions that are secure, efficient, and user-friendly. I focus on writing clean, maintainable code and enjoy solving real-world problems through technology. With a continuous drive to learn and innovate, I’m committed to creating impactful digital experiences that blend performance with modern design and usability.",
               ),
-             
+
 
               // Stats
               React.createElement(
